@@ -81,7 +81,7 @@ class ArabicFemale(ResponsiveVoice):
 class ArmenianMale(ResponsiveVoice):
     uri = "ArmenianMale"
     name = "Armenian Male"
-    voiceIDs = 99
+    voiceIDs = [99]
     _raw = {'flag': 'hy', 'gender': 'f', 'lang': 'hy-AM', 'voiceIDs': '99', 'name': 'Armenian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -118,7 +118,7 @@ class AustralianMale(ResponsiveVoice):
 class BanglaBangladeshFemale(ResponsiveVoice):
     uri = "BanglaBangladeshFemale"
     name = "Bangla Bangladesh Female"
-    voiceIDs = 435
+    voiceIDs = [435]
     _raw = {'flag': 'bd', 'gender': 'f', 'lang': 'bn-BD', 'voiceIDs': '435', 'name': 'Bangla Bangladesh Female'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -142,7 +142,7 @@ class BanglaBangladeshMale(ResponsiveVoice):
 class BanglaIndiaFemale(ResponsiveVoice):
     uri = "BanglaIndiaFemale"
     name = "Bangla India Female"
-    voiceIDs = 447
+    voiceIDs = [447]
     _raw = {'flag': 'bd', 'gender': 'f', 'lang': 'bn-IN', 'voiceIDs': '447', 'name': 'Bangla India Female'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -284,7 +284,7 @@ class CzechFemale(ResponsiveVoice):
 class CzechMale(ResponsiveVoice):
     uri = "CzechMale"
     name = "Czech Male"
-    voiceIDs = 161
+    voiceIDs = [161]
     _raw = {'flag': 'cz', 'gender': 'm', 'lang': 'cs-CZ', 'voiceIDs': '161', 'deprecated': True, 'name': 'Czech Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -309,7 +309,7 @@ class DanishFemale(ResponsiveVoice):
 class DanishMale(ResponsiveVoice):
     uri = "DanishMale"
     name = "Danish Male"
-    voiceIDs = 162
+    voiceIDs = [162]
     _raw = {'flag': 'da', 'gender': 'm', 'lang': 'da-DK', 'voiceIDs': '162', 'deprecated': True, 'name': 'Danish Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -409,7 +409,7 @@ class FinnishFemale(ResponsiveVoice):
 class FinnishMale(ResponsiveVoice):
     uri = "FinnishMale"
     name = "Finnish Male"
-    voiceIDs = 160
+    voiceIDs = [160]
     _raw = {'flag': 'fi', 'gender': 'm', 'lang': 'fi-FI', 'voiceIDs': '160', 'deprecated': True, 'name': 'Finnish Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -458,7 +458,7 @@ class FrenchCanadianFemale(ResponsiveVoice):
 class FrenchCanadianMale(ResponsiveVoice):
     uri = "FrenchCanadianMale"
     name = "French Canadian Male"
-    voiceIDs = 450
+    voiceIDs = [450]
     _raw = {'flag': 'ca', 'gender': 'm', 'lang': 'fr-CA', 'voiceIDs': '450', 'name': 'French Canadian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -483,7 +483,7 @@ class GreekFemale(ResponsiveVoice):
 class GreekMale(ResponsiveVoice):
     uri = "GreekMale"
     name = "Greek Male"
-    voiceIDs = 163
+    voiceIDs = [163]
     _raw = {'flag': 'gr', 'gender': 'm', 'lang': 'el-GR', 'voiceIDs': '163', 'deprecated': True, 'name': 'Greek Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -508,7 +508,7 @@ class HindiFemale(ResponsiveVoice):
 class HindiMale(ResponsiveVoice):
     uri = "HindiMale"
     name = "Hindi Male"
-    voiceIDs = 394
+    voiceIDs = [394]
     _raw = {'flag': 'hi', 'gender': 'm', 'lang': 'hi-IN', 'voiceIDs': '394', 'name': 'Hindi Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -533,7 +533,7 @@ class HungarianFemale(ResponsiveVoice):
 class HungarianMale(ResponsiveVoice):
     uri = "HungarianMale"
     name = "Hungarian Male"
-    voiceIDs = 164
+    voiceIDs = [164]
     _raw = {'flag': 'hu', 'gender': 'm', 'lang': 'hu-HU', 'voiceIDs': '164', 'deprecated': True,
             'name': 'Hungarian Male'}
 
@@ -559,7 +559,7 @@ class IndonesianFemale(ResponsiveVoice):
 class IndonesianMale(ResponsiveVoice):
     uri = "IndonesianMale"
     name = "Indonesian Male"
-    voiceIDs = 395
+    voiceIDs = [395]
     _raw = {'flag': 'id', 'gender': 'm', 'lang': 'id-ID', 'voiceIDs': '395', 'name': 'Indonesian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -634,7 +634,7 @@ class KoreanFemale(ResponsiveVoice):
 class KoreanMale(ResponsiveVoice):
     uri = "KoreanMale"
     name = "Korean Male"
-    voiceIDs = 397
+    voiceIDs = [397]
     _raw = {'flag': 'kr', 'gender': 'm', 'lang': 'ko-KR', 'voiceIDs': '397', 'name': 'Korean Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -646,7 +646,7 @@ class KoreanMale(ResponsiveVoice):
 class LatinFemale(ResponsiveVoice):
     uri = "LatinFemale"
     name = "Latin Female"
-    voiceIDs = 114
+    voiceIDs = [114]
     _raw = {'flag': 'va', 'gender': 'f', 'lang': 'la', 'voiceIDs': '114', 'deprecated': True, 'name': 'Latin Female'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -658,7 +658,7 @@ class LatinFemale(ResponsiveVoice):
 class LatinMale(ResponsiveVoice):
     uri = "LatinMale"
     name = "Latin Male"
-    voiceIDs = 165
+    voiceIDs = [165]
     _raw = {'flag': 'va', 'gender': 'm', 'lang': 'la', 'voiceIDs': '165', 'name': 'Latin Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -695,7 +695,7 @@ class NorwegianFemale(ResponsiveVoice):
 class NorwegianMale(ResponsiveVoice):
     uri = "NorwegianMale"
     name = "Norwegian Male"
-    voiceIDs = 166
+    voiceIDs = [166]
     _raw = {'flag': 'no', 'gender': 'm', 'lang': 'nb-NO', 'voiceIDs': '166', 'name': 'Norwegian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -745,7 +745,7 @@ class PortugueseFemale(ResponsiveVoice):
 class PortugueseMale(ResponsiveVoice):
     uri = "PortugueseMale"
     name = "Portuguese Male"
-    voiceIDs = 400
+    voiceIDs = [400]
     _raw = {'flag': 'br', 'gender': 'm', 'lang': 'pt-BR', 'voiceIDs': '400', 'name': 'Portuguese Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -821,7 +821,7 @@ class SlovakFemale(ResponsiveVoice):
 class SlovakMale(ResponsiveVoice):
     uri = "SlovakMale"
     name = "Slovak Male"
-    voiceIDs = 167
+    voiceIDs = [167]
     _raw = {'flag': 'sk', 'gender': 'm', 'lang': 'sk-SK', 'voiceIDs': '167', 'deprecated': True, 'name': 'Slovak Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -922,7 +922,7 @@ class TamilFemale(ResponsiveVoice):
 class TamilMale(ResponsiveVoice):
     uri = "TamilMale"
     name = "Tamil Male"
-    voiceIDs = 141
+    voiceIDs = [141]
     _raw = {'flag': 'hi', 'gender': 'm', 'lang': 'hi-IN', 'voiceIDs': '141', 'name': 'Tamil Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -947,7 +947,7 @@ class ThaiFemale(ResponsiveVoice):
 class ThaiMale(ResponsiveVoice):
     uri = "ThaiMale"
     name = "Thai Male"
-    voiceIDs = 403
+    voiceIDs = [403]
     _raw = {'flag': 'th', 'gender': 'm', 'lang': 'th-TH', 'voiceIDs': '403', 'name': 'Thai Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1008,7 +1008,7 @@ class VietnameseFemale(ResponsiveVoice):
 class VietnameseMale(ResponsiveVoice):
     uri = "VietnameseMale"
     name = "Vietnamese Male"
-    voiceIDs = 146
+    voiceIDs = [146]
     _raw = {'flag': 'vi', 'gender': 'm', 'lang': 'vi-VN', 'voiceIDs': '146', 'name': 'Vietnamese Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1020,7 +1020,7 @@ class VietnameseMale(ResponsiveVoice):
 class AfrikaansMale(ResponsiveVoice):
     uri = "AfrikaansMale"
     name = "Afrikaans Male"
-    voiceIDs = 93
+    voiceIDs = [93]
     _raw = {'flag': 'af', 'gender': 'm', 'lang': 'af-ZA', 'voiceIDs': '93', 'name': 'Afrikaans Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1032,7 +1032,7 @@ class AfrikaansMale(ResponsiveVoice):
 class AlbanianMale(ResponsiveVoice):
     uri = "AlbanianMale"
     name = "Albanian Male"
-    voiceIDs = 94
+    voiceIDs = [94]
     _raw = {'flag': 'sq', 'gender': 'm', 'lang': 'sq-AL', 'voiceIDs': '94', 'name': 'Albanian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1044,7 +1044,7 @@ class AlbanianMale(ResponsiveVoice):
 class BosnianMale(ResponsiveVoice):
     uri = "BosnianMale"
     name = "Bosnian Male"
-    voiceIDs = 14
+    voiceIDs = [14]
     _raw = {'flag': 'bs', 'gender': 'm', 'lang': 'bs', 'voiceIDs': '14', 'name': 'Bosnian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1056,7 +1056,7 @@ class BosnianMale(ResponsiveVoice):
 class CatalanMale(ResponsiveVoice):
     uri = "CatalanMale"
     name = "Catalan Male"
-    voiceIDs = 68
+    voiceIDs = [68]
     _raw = {'flag': 'catalonia', 'gender': 'm', 'lang': 'ca-ES', 'voiceIDs': '68', 'name': 'Catalan Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1068,7 +1068,7 @@ class CatalanMale(ResponsiveVoice):
 class CroatianMale(ResponsiveVoice):
     uri = "CroatianMale"
     name = "Croatian Male"
-    voiceIDs = 13
+    voiceIDs = [13]
     _raw = {'flag': 'hr', 'gender': 'm', 'lang': 'hr-HR', 'voiceIDs': '13', 'name': 'Croatian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1080,7 +1080,7 @@ class CroatianMale(ResponsiveVoice):
 class EsperantoMale(ResponsiveVoice):
     uri = "EsperantoMale"
     name = "Esperanto Male"
-    voiceIDs = 108
+    voiceIDs = [108]
     _raw = {'flag': 'eo', 'gender': 'm', 'lang': 'eo', 'voiceIDs': '108', 'name': 'Esperanto Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1092,7 +1092,7 @@ class EsperantoMale(ResponsiveVoice):
 class IcelandicMale(ResponsiveVoice):
     uri = "IcelandicMale"
     name = "Icelandic Male"
-    voiceIDs = 110
+    voiceIDs = [110]
     _raw = {'flag': 'is', 'gender': 'm', 'lang': 'is-IS', 'voiceIDs': '110', 'deprecated': True,
             'name': 'Icelandic Male'}
 
@@ -1105,7 +1105,7 @@ class IcelandicMale(ResponsiveVoice):
 class IcelandicFemale(ResponsiveVoice):
     uri = "IcelandicFemale"
     name = "Icelandic Female"
-    voiceIDs = 110
+    voiceIDs = [110]
     _raw = {'flag': 'is', 'gender': 'm', 'lang': 'is-IS', 'voiceIDs': '110', 'name': 'Icelandic Female'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1117,7 +1117,7 @@ class IcelandicFemale(ResponsiveVoice):
 class LatvianMale(ResponsiveVoice):
     uri = "LatvianMale"
     name = "Latvian Male"
-    voiceIDs = 115
+    voiceIDs = [115]
     _raw = {'flag': 'lv', 'gender': 'm', 'lang': 'lv-LV', 'voiceIDs': '115', 'name': 'Latvian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1129,7 +1129,7 @@ class LatvianMale(ResponsiveVoice):
 class MacedonianMale(ResponsiveVoice):
     uri = "MacedonianMale"
     name = "Macedonian Male"
-    voiceIDs = 116
+    voiceIDs = [116]
     _raw = {'flag': 'mk', 'gender': 'm', 'lang': 'mk-MK', 'voiceIDs': '116', 'name': 'Macedonian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1141,7 +1141,7 @@ class MacedonianMale(ResponsiveVoice):
 class MoldavianFemale(ResponsiveVoice):
     uri = "MoldavianFemale"
     name = "Moldavian Female"
-    voiceIDs = 117
+    voiceIDs = [117]
     _raw = {'flag': 'md', 'gender': 'f', 'lang': 'md', 'voiceIDs': '117', 'name': 'Moldavian Female'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1153,7 +1153,7 @@ class MoldavianFemale(ResponsiveVoice):
 class MoldavianMale(ResponsiveVoice):
     uri = "MoldavianMale"
     name = "Moldavian Male"
-    voiceIDs = 117
+    voiceIDs = [117]
     _raw = {'flag': 'md', 'gender': 'm', 'lang': 'md', 'voiceIDs': '117', 'deprecated': True, 'name': 'Moldavian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1165,7 +1165,7 @@ class MoldavianMale(ResponsiveVoice):
 class MontenegrinMale(ResponsiveVoice):
     uri = "MontenegrinMale"
     name = "Montenegrin Male"
-    voiceIDs = 118
+    voiceIDs = [118]
     _raw = {'flag': 'me', 'gender': 'm', 'lang': 'me', 'voiceIDs': '118', 'name': 'Montenegrin Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1177,7 +1177,7 @@ class MontenegrinMale(ResponsiveVoice):
 class SerbianMale(ResponsiveVoice):
     uri = "SerbianMale"
     name = "Serbian Male"
-    voiceIDs = 12
+    voiceIDs = [12]
     _raw = {'flag': 'sr', 'gender': 'm', 'lang': 'sr-RS', 'voiceIDs': '12', 'name': 'Serbian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1189,7 +1189,7 @@ class SerbianMale(ResponsiveVoice):
 class SerbocroatianMale(ResponsiveVoice):
     uri = "SerbocroatianMale"
     name = "Serbo-Croatian Male"
-    voiceIDs = 131
+    voiceIDs = [131]
     _raw = {'flag': 'hr', 'gender': 'm', 'lang': 'hr-HR', 'voiceIDs': '131', 'name': 'Serbo-Croatian Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1201,7 +1201,7 @@ class SerbocroatianMale(ResponsiveVoice):
 class SwahiliMale(ResponsiveVoice):
     uri = "SwahiliMale"
     name = "Swahili Male"
-    voiceIDs = 140
+    voiceIDs = [140]
     _raw = {'flag': 'sw', 'gender': 'm', 'lang': 'sw-KE', 'voiceIDs': '140', 'name': 'Swahili Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
@@ -1213,7 +1213,7 @@ class SwahiliMale(ResponsiveVoice):
 class WelshMale(ResponsiveVoice):
     uri = "WelshMale"
     name = "Welsh Male"
-    voiceIDs = 147
+    voiceIDs = [147]
     _raw = {'flag': 'cy', 'gender': 'm', 'lang': 'cy', 'voiceIDs': '147', 'name': 'Welsh Male'}
 
     def __init__(self, pitch=0.5, rate=0.5, vol=1):
