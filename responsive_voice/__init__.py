@@ -1,17 +1,6 @@
 import requests
-import subprocess
-import platform
 import tempfile
 import os
-
-if platform.system() == "Windows":
-    try:
-        import playsound
-    except ImportError:
-        print("run pip install playsound")
-        raise
-else:
-    playsound = None
 
 
 class ResponsiveVoice:
@@ -71,25 +60,10 @@ class ResponsiveVoice:
         self.gender = gender or ResponsiveVoice.UNKNOWN_GENDER
         self.service = service
         self.voice_name = voice_name
+        # key extracted from website - 0POmS5Y2
         # key extracted from wordpress plugin - FQ9r4hgY
         # alternate key from Bundler - HY7lTyiS
         self.key = key or "FQ9r4hgY"
-
-    @staticmethod
-    def play_mp3(mp3_file, play_cmd="mpg123 -q %1", blocking=False):
-        # TODO support windows shell commands
-
-        if playsound is not None:
-            playsound.playsound(mp3_file, blocking)
-        else:
-            play_mp3_cmd = str(play_cmd).split(" ")
-            for index, cmd in enumerate(play_mp3_cmd):
-                if cmd == "%1":
-                    play_mp3_cmd[index] = mp3_file
-            if blocking:
-                return subprocess.call(play_mp3_cmd)
-            else:
-                return subprocess.Popen(play_mp3_cmd)
 
     def get_mp3(self, sentence, mp3_file=None, pitch=None, rate=None,
                 vol=None, gender=None):
@@ -118,10 +92,3 @@ class ResponsiveVoice:
         with open(mp3_file, "wb") as f:
             f.write(r.content)
         return mp3_file
-
-    def say(self, sentence, mp3_file=None, pitch=None, rate=None, vol=None,
-            gender=None,
-            play_cmd="mpg123 -q %1", blocking=True):
-        filename = self.get_mp3(sentence, mp3_file, pitch=pitch,
-                                rate=rate, vol=vol, gender=gender)
-        self.play_mp3(filename, play_cmd, blocking)

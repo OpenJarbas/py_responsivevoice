@@ -1,21 +1,21 @@
 from responsive_voice import ResponsiveVoice
 
 engine = ResponsiveVoice()
-engine.say("hello world")
-engine.say("hello world",
+file_path = engine.get_mp3("hello world")
+file_path = engine.get_mp3("hello world",
            gender=ResponsiveVoice.MALE,
            rate=0.45)
 
 engine = ResponsiveVoice(lang=ResponsiveVoice.PORTUGUESE_BR)
 file_path = engine.get_mp3("olá mundo")
-engine.play_mp3(file_path)
 
-from responsive_voice.voices import EnglishIndia, UKEnglishMale, \
+
+from responsive_voice.voices import EnglishIndia, UkEnglishMale, \
     PortuguesePortugal
 
 india = EnglishIndia()
-uk = UKEnglishMale()
+uk = UkEnglishMale()
 pt = PortuguesePortugal()
-india.say("hello world")
-uk.say("hello world")
-pt.say("olá mundo")
+india.get_mp3("hello world")
+uk.get_mp3("hello world")
+pt.get_mp3("olá mundo")
