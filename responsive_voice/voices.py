@@ -8571,3 +8571,14 @@ LANG2VOICE = {
               MicrosoftZhiweiDesktopChineseTraditionalTaiwan, MicrosoftHanhanDesktopChineseTaiwan, FallbackChineseTw,
               MozttsAndroidZhTw, Zhtw, ComAppleTtsbundleMeijiacompact],
 }
+
+
+def get_voices(lang=""):
+    voices = {}
+    if lang:
+        return {v.__class.__name__: v for v in LANG2VOICE.get(lang) or []}
+    for lang, lang_voices in LANG2VOICE.items():
+        lang_voices = {v.__name__: v for v in lang_voices}
+        voices = {**voices, **lang_voices}
+    return voices
+

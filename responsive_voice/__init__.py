@@ -72,8 +72,6 @@ class ResponsiveVoice:
             mp3_file += ".mp3"
 
         params = {
-            # key extracted from wordpress plugin - FQ9r4hgY
-            # alternate key from Bundler - HY7lTyiS
             "key": self.key,
             "t": sentence,
             "tl": self.lang,
